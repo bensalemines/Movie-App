@@ -31,8 +31,8 @@ const handleAdd = () => {
      <Button className='btn-add'
         variant="primary"
         onClick={handleShow}
-      >
-        Add Movie
+      title='ADD MOVIE'>
+        +
       </Button>
        <Modal id="adds" show={ShowForm} onHide={handleClose} centered>
         <Modal.Header>
@@ -41,23 +41,23 @@ const handleAdd = () => {
 
         <Modal.Body>
           <div className="newSerie">
-            <InputGroup className="title">
+            <InputGroup className="mb-3">
               <FormControl placeholder="Movie title"name="title" onChange={addNewFilm}/>
             </InputGroup>
 
-            <InputGroup className="description">
+            <InputGroup className="mb-3">
               <FormControl placeholder="Movie description..." name="description" onChange={addNewFilm}/>
             </InputGroup>
 
-            <InputGroup className="posterUrl ">
+            <InputGroup className="mb-3">
               <FormControl placeholder="Poster URL... " name="posterURL" onChange={addNewFilm} />
             </InputGroup>
 
-            <InputGroup className="category">
+            <InputGroup className="mb-3">
               <FormControl placeholder="Category..." name="category" onChange={addNewFilm} />
             </InputGroup>
 
-            <InputGroup className="Rating">
+            <InputGroup className="mb-3">
               <FormControl placeholder="Movie Rating..." name="Rating" onChange={addNewFilm} />
             </InputGroup>
         

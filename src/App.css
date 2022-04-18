@@ -8,7 +8,7 @@ body {
   font-family: sans-serif;
   padding:0;
   margin:0;
-  background-color: black;
+  background-color: black !important;
 }
 
 a {
@@ -71,8 +71,8 @@ a {
   height: 120px;
   padding: 15px 10px;
   text-align: center;
-  font-size: 17px;
-  color: #fff;
+  font-size: 15px;
+  color: black;
   transform: rotate(90deg);
   transform-origin: 0 100px;
   opacity: 0;
@@ -130,69 +130,53 @@ a {
   transform: translate(0);
 }
 .card:hover .title{
-  transform:translateY(50px);
+  transform:translateY(80px);
 }
-.MovieList{
-  display:grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 25%;
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
-  
-}
-.MovieList {
-  scroll-snap-align: start;
-}
+ .MovieList{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} 
 .Nav{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  justify-items: center;
   color:white;
   background-color: #130f40;
   height: 80px;
-  justify-items:center ; 
-}
-.btn-add{
-  background-color: transparent;
-  border:  1px solid #d140ad;
-  width:100px;
-  height: 30px;
-  color:white;
-  border-radius: 5px;
   
 }
+.btn-add{
+ margin-top: 25px;
+ margin-right: 50px;
+ width:50px;
+ background-color: transparent !important;
+ border: 1px solid #d140ad !important;
+}
 .btn-add:hover{
-  background-color:#d140ad;
+  background-color:#d140ad !important;
 }
 .search{
   background-color: transparent;
   border: 1px solid #d140ad;
   border-radius: 5px ;
-  width:150%;
-  height: 30px ;
-}
-.rightSide{
-  display: flex;
-  padding: 30px;
-}
-a{
-  color:grey;
- padding:30px;
-}
-a:hover{
-  color:#d140ad;
-}
-.pages{
-  padding:35px;
+  height: 35px;
+  width:50%;
+  margin-top:25px;
+  margin-left:30%;
 }
 .head{
   position:sticky;
   width:100%;
 
 }
-a:hover .showText {
-  visibility: visible;
+.RATE{
+  width: 40%;
+  height: 60px;
+  margin-top: 28px;
 }
+
 
 
 
