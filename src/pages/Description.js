@@ -1,8 +1,16 @@
 import React from 'react'
+import { useParams, Link } from 'react-router-dom'
 
-const Description = () => {
+const Description = (props) => {
+  const params = useParams();
+  const movie = props.movie.find(el => el.id === +params.movId);
+  
   return (
-    <div>Description</div>
+    <div className="description-page">
+    {movie.trailer}
+    <p className='desc'>{movie.description}</p>
+    <Link to='/'><button className='backHome'>BACK HOME</button></Link>
+    </div>
   )
 }
 

@@ -3,6 +3,8 @@ import MovieList from './components/MovieList.js';
 import data from './components/data.js';
 import Navbar from './components/Navbar.js';
 import React,{useState} from 'react';
+import { Routes , Route} from 'react-router-dom'
+import Description from './pages/Description';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -16,7 +18,10 @@ function App() {
   return (
     <div className="App">
       <Navbar SearchT={filterT} addFilm={addNewFilm} SearchR={filterR}/>
-      <MovieList film={SearchT} movie={Data} rating={SearchR}/>
+      <Routes>
+      <Route path='/' element={<MovieList film={SearchT} movie={Data} rating={SearchR}/>}/>
+       <Route path='/description/:movId' element={<Description movie={data}/>}/>
+      </Routes>
     </div>
   );
 }

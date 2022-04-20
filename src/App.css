@@ -176,6 +176,30 @@ a {
   height: 60px;
   margin-top: 28px;
 }
+.description-page{
+  width:45%;
+  /* background-color: white; */
+  margin-left:28%;
+  padding:20px;
+  
+}
+.desc{
+  text-align: center;
+  size: 20px;
+  color:white;
+}
+.backHome{
+  margin-left:40%;
+  border: 1px solid #d140ad;
+  background-color: transparent;
+  color:white;
+  border-radius: 5px;
+  padding: 10px;
+}
+.backHome:hover{
+  background-color: #d140ad;
+  
+}
 
 
 

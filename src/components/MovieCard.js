@@ -1,8 +1,10 @@
 import React from 'react';
+
+
 const MovieCard = (props) => {
   return (
     <div className='MovieCard'>
-      
+
 <div class="card">
   <a href="a">
     <div class="img1" style={{ 
